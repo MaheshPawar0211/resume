@@ -1,0 +1,181 @@
+% Thank you Sourabh Bajaj for this template.
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemiii}{--}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\resumeItemDescpritionStart}{\begin{itemize}}
+\newcommand{\resumeItemDescpritionEnd}{\end{itemize}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://onkars.me/}{\Large Onkar Shedge}} & Email : \href{mailto:onkar@onkars.me}{onkar@onkars.me}\\
+  \href{http://onkars.me/}{http://onkars.me/} & Mobile : +91-7276867872 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Pune Institute of Computer Technology}{Pune, India}
+      {Bachelor of Computer Engineering;  GPA: 3.66 (9.15/10.0)}{Aug. 2012 -- July. 2016}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {ThoughtWorks}{Pune, India}
+      {Application Developer}{August 2016 - Present}
+      \resumeItemListStart
+        \resumeItem{Pharmaceuticals application}
+          {This application used historic data about drugs and prescriptions to help analysts make decisions how a drug would perform in market.}
+          \resumeItemDescpritionStart
+            \item As the application was mostly read only and data was monthly added,
+                  deployed a \textit{Varnish} server to act as caching proxy server to improve performance of application. requests time was around 6s reduced to milliseconds
+            \item Database migration tool was not in place, used flyway.
+            \item Looked into end to end life cycle i.e devops also.
+            \item D3.js charts visualization
+            \item AngularJS 1.4, SQL Server, Kubernetes, helm, circlCI.
+          \resumeItemDescpritionEnd
+          
+        \resumeItem{ETL Application}
+          {Analysts used Veeva data for visualizations in Tableau, other tools. The goal of the application was to get the data(around 250Gb) from Salesforce and dump it into AWS Redshift via S3 using \textit{COPY} command}
+          \resumeItemDescpritionStart
+            \item Created a Kubernetes job from within the cluster, using RBAC.
+            \item Used Celery to speed up the downloading data from Salesforce.
+            \item Also requests were first synchronous, I implemented asynchronous using asyncio.
+            \item Gave a office wide lunch and learn on Authentication and authorization in k8s, to share and extend my knowledge on k8s, demoed on AWS using kops to deploy.
+            \item Python3, Flask, React, Redux, K8s, helm, circleCI.
+          \resumeItemDescpritionEnd
+          
+        \resumeItem{Bumblebee Chatbot (Internal Application)}
+          {Created a chatbot as a platform so that other teams can develop their features into the bot. Integrated with \href{https://chat.google.com}{chat.google}
+          }
+          \resumeItemDescpritionStart
+            \item Initially started out with NLTK package, but accuracy was not much, so moved to API.ai now known as Dialogflow
+            \item Used AWS lambda for Serverless application.
+            \item Got familiar with AWS services like DynamoDB, IAM roles and JWT tokens, Oauth2.
+            \item Also created a personal chatbot integrated with google's personal assistant to book meeting rooms and find when a person is free/busy. Was closely monitoring events in Google I/O 2017 for updates.
+            \item Golang 1.8, CircleCI
+          \resumeItemDescpritionEnd
+          
+        \resumeItem{Bank Application}
+          { Worked with Oracle ODI tool, ETL tool. Java Services. Oracle SQL Server.}
+         
+       \resumeItemListEnd
+
+    
+
+    
+    \resumeSubheading
+      {Pune Institute of Computer Technology}{Pune, India}
+      {Student}{Aug 2012 - May 2016}
+      \resumeItemListStart
+        \resumeItem{Distributed Off-heap JVM Cache}
+          {Interned at eQ Technologic. To store large data, replicated across cluster, in off-heap RAM inspired by HDFS architecture. }
+        \resumeItem{Pradnya Competition}
+          {A Django web application, so participants can solve problems by submitting code.}
+        \resumeItem{Blog}
+         {In 2nd year wrote a blog on NASM(x86 assembly language progamming) with my colleague. \href{http://nasmcodeasy.blogspot.in/}{http://nasmcodeasy.blogspot.in}
+         }
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Achievements}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Google Summer of Code 2016 - Apache Zeppelin}
+      {Notebooks are stored in the local file-system or cloud. The goal of the project was to share these notebooks wiht other users via p2p systems like IPFS, Bittorrent
+      \href{https://onkarshedge.github.io/gsoc2016/}{https://onkarshedge.github.io/gsoc2016/}}
+    \resumeSubItem{ACM ICPC}
+      {Participated in ACM ICPC regionals 2015 IIT Kharagpur, secured 71st rank, only team from PICT at that regionals.}
+  \resumeSubHeadingListEnd
+
+
+% --------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+    \item{
+     \textbf{Languages}{: Python, JavaScript, Golang, Java, C/C++, SQL}
+    }
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
