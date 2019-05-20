@@ -79,7 +79,7 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{http://onkars.me/}{\Large Onkar Shedge}} & Email : \href{mailto:onkar@onkars.me}{onkar@onkars.me}\\
+  \textbf{\href{http://onkars.me/}{\Large Onkar Shedge}} & Email : \href{mailto:oshedge@outlook.com}{oshedge@outlook.com}\\
   \href{http://onkars.me/}{http://onkars.me/} & Mobile : +91-7276867872 \\
 \end{tabular*}
 
@@ -101,15 +101,22 @@
       {ThoughtWorks}{Pune, India}
       {Application Developer}{August 2016 - Present}
       \resumeItemListStart
+     
+      \resumeItem{Retail pricing solution}
+          {Micro-Services oriented application to recommend prices for products placed on the shelf. The application comprised of human intelligence and Data Science. Apart from writing Scala API's, I also worked on Data Engineering to some extent.}
+          \resumeItemDescpritionStart
+            \item Aiflow as workflow-manager/orchestrator
+            \item Spark Jobs deployed on GCP DataProc cluster.
+            \item Scala 2.12, Play Framework, Postgres, Kubernetes.
+          \resumeItemDescpritionEnd
+          
         \resumeItem{Pharmaceuticals application}
           {This application used historic data about drugs and prescriptions to help analysts make decisions how a drug would perform in market.}
           \resumeItemDescpritionStart
             \item As the application was mostly read only and data was monthly added,
                   deployed a \textit{Varnish} server to act as caching proxy server to improve performance of application. requests time was around 6s reduced to milliseconds
-            \item Database migration tool was not in place, used flyway.
-            \item Looked into end to end life cycle i.e devops also.
             \item D3.js charts visualization
-            \item AngularJS 1.4, SQL Server, Kubernetes, helm, circlCI.
+            \item AngularJS 1.4, SQL Server, Kubernetes, helm, circleCI.
           \resumeItemDescpritionEnd
           
         \resumeItem{ETL Application}
@@ -126,10 +133,9 @@
           {Created a chatbot as a platform so that other teams can develop their features into the bot. Integrated with \href{https://chat.google.com}{chat.google}
           }
           \resumeItemDescpritionStart
-            \item Initially started out with NLTK package, but accuracy was not much, so moved to API.ai now known as Dialogflow
-            \item Used AWS lambda for Serverless application.
-            \item Got familiar with AWS services like DynamoDB, IAM roles and JWT tokens, Oauth2.
-            \item Also created a personal chatbot integrated with google's personal assistant to book meeting rooms and find when a person is free/busy. Was closely monitoring events in Google I/O 2017 for updates.
+            \item Initially started out with NLTK package, but accuracy was not much, so moved to API.ai now known as Dialogflow.
+            \item Got familiar with AWS services like AWS lambda, DynamoDB, IAM roles and JWT tokens, Oauth2.
+            % \item Also created a personal chatbot integrated with google's personal assistant to book meeting rooms and find when a person is free/busy. Was closely monitoring events in Google I/O 2017 for updates.
             \item Golang 1.8, CircleCI
           \resumeItemDescpritionEnd
           
@@ -172,7 +178,7 @@
 \section{Programming Skills}
  \resumeSubHeadingListStart
     \item{
-     \textbf{Languages}{: Python, JavaScript, Golang, Java, C/C++, SQL}
+     \textbf{Languages}{: Scala, Python, JavaScript, Golang, Java, C/C++, SQL}
     }
  \resumeSubHeadingListEnd
 
