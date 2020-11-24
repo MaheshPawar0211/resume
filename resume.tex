@@ -80,7 +80,7 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
 \textbf{\href{http://onkars.me/}{\Large Onkar Shedge}} & Email : \href{mailto:oshedge@outlook.com}{oshedge@outlook.com}\\
-\href{http://onkars.me/}{http://onkars.me/} & Mobile : +91-7276867872 \\
+\href{https://iamonkar.dev/}{https://iamonkar.dev/} & Mobile : +91-7276867872 \\
 \end{tabular*}
 
 
@@ -92,6 +92,10 @@
 {Bachelor of Computer Engineering;  GPA: 3.66 (9.15/10.0)}{Aug. 2012 -- July. 2016}
 \resumeSubHeadingListEnd
 
+%-----------Objective-----------------
+\section{Objective}
+In my professional experience, I have worked in an environment which follows Agile, Extreme Programming practices. I have learnt to write clean code, TDD; worked on backend, DevOps.
+I am interested in Distributed systems, DDD. In an effort to enhance my knowledge and contribute to organization's growth, I'd like to bring these skills to the mentioned position.
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
@@ -99,32 +103,30 @@
 
 \resumeSubheading
 {ThoughtWorks}{Pune, India}
-{Application Developer}{August 2016 - Present}
+{Application Developer}{August 2016 - November 2020}
 \resumeItemListStart
 
 \resumeItem{Capital Management Finance Application}
-{This application was used by the finance analysts who made daily transactions of buying/selling shares, debentures, granting options etc. on behalf of the senior partners in the firm. The settlements i.e payments happened outside the system but were entered in the system, hence a source of truth ledger. Reports were generated using OBIEEE.}
+{Tool to capture and maintain holdings for multiple capital assets for partners.
+Provide an updated view to the user along with picture perfect reports and even ad-hoc analysis.
+Very critical application since this is the only source of truth for a partner's holding.}
+\break
+I worked on the following technologies in the project :
 \resumeItemDescpritionStart
-\item Spring Boot 2.1, Java 11, react 16, redux, ag-grid, Mysql 8
-\item Data was migrated from 1st version legacy application which used Oracle DB using Sqlines, Pentaho and tested using Querysurge.
-\item Pentaho for ETL reports using k8s CronJobs
-\item Telemetry: Prometheus, Grafana dashboard
+\item Backend : Spring Boot 2.1, Java 11, Mysql 8, helm, k8s, GoCD pipelines
+\item Monitoring \& Logging: I build dashboards, alerts in Splunk. Prometheus metric collection, dashboard in Grafana.
+\item Data Migration: Data was migrated from 1st version legacy application which used Oracle DB using Sqlines, Pentaho and tested using Querysurge.
+\item ETL : I worked on Pentaho for ETL of data from application to reports, run using Kubertenes Jobs
 \item Spring-Batch for batch transactions.
+\item Frontend: I worked to some extent. react 16(functional components), redux, ag-grid,
 \resumeItemDescpritionEnd
 
 \resumeItem{Retail pricing solution}
-{Micro-Services oriented application to recommend prices for products placed on the shelf. The application comprised of human intelligence and Data Science. Apart from writing Scala API's, I also worked on Data Engineering to some extent.}
+{Price recommendation system for products placed on the shelf. The application comprised of human intelligence and Data Science. Apart from writing Scala API's, I also worked on Data Engineering to some extent.}
 \resumeItemDescpritionStart
 \item Aiflow as workflow-manager/orchestrator
 \item Spark Jobs deployed on GCP DataProc cluster.
 \item Scala 2.12, Play Framework, Postgres, Kubernetes.
-\resumeItemDescpritionEnd
-
-\resumeItem{Pharmaceuticals application}
-{This application used historic data about drugs and prescriptions to help analysts make decisions how a drug would perform in market.}
-\resumeItemDescpritionStart
-\item D3.js charts visualization
-\item AngularJS 1.4, SQL Server, Kubernetes, helm, circleCI.
 \resumeItemDescpritionEnd
 
 \resumeItem{ETL Application}
@@ -133,7 +135,7 @@
 \item Created a Kubernetes job from within the cluster, using RBAC.
 \item Used Celery to speed up the downloading data from Salesforce.
 \item Also requests were first synchronous, I implemented asynchronous using asyncio.
-\item Gave a office wide lunch and learn on Authentication and authorization in k8s, to share and extend my knowledge on k8s, demoed on AWS using kops to deploy.
+% \item Gave a office wide lunch and learn on Authentication and authorization in k8s, to share and extend my knowledge on k8s, demoed on AWS using kops to deploy.
 \item Python3, Flask, React, Redux, K8s, helm, circleCI.
 \resumeItemDescpritionEnd
 
@@ -141,14 +143,11 @@
 {Created a chatbot as a platform so that other teams can develop their features into the bot. Integrated with \href{https://chat.google.com}{chat.google}
 }
 \resumeItemDescpritionStart
-\item Initially started out with NLTK package, but accuracy was not much, so moved to API.ai now known as Dialogflow.
+\item Tool used: API.ai now known as Dialogflow.
 \item Got familiar with AWS services like AWS lambda, DynamoDB, IAM roles and JWT tokens, Oauth2.
 % \item Also created a personal chatbot integrated with google's personal assistant to book meeting rooms and find when a person is free/busy. Was closely monitoring events in Google I/O 2017 for updates.
 \item Golang 1.8, CircleCI
 \resumeItemDescpritionEnd
-
-\resumeItem{Bank Application}
-{ Worked with Oracle ODI tool, ETL tool. Java Services. Oracle SQL Server.}
 
 \resumeItemListEnd
 
@@ -186,7 +185,7 @@
 \section{Programming Skills}
 \resumeSubHeadingListStart
 \item{
-\textbf{Languages}{: Java, Python, Scala, JavaScript, Golang, C/C++, SQL}
+\textbf{Languages}{: Java, Python, Scala, JavaScript}
 }
 \resumeSubHeadingListEnd
 
